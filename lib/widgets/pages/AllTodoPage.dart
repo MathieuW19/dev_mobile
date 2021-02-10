@@ -20,8 +20,7 @@ class AllTodoPage extends StatelessWidget {
           FlatButton(
             child: const Text('Ajouter'),
             onPressed: () {
-              /*Navigator.of(context).pop();
-                  _addTodoItem(titleController.text);*/
+              //code pour mettre à jour le nom de la tâche
             },
           ),
           FlatButton(
