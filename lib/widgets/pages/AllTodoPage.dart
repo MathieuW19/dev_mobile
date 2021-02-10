@@ -14,7 +14,23 @@ class AllTodoPage extends StatelessWidget {
         title: Text("Changer le nom de la tâche"),
         content: TextField(
           controller: titleController2,
+          decoration: const InputDecoration(hintText: 'Saisir la tâche'),
         ),
+        actions: <Widget>[
+          FlatButton(
+            child: const Text('Ajouter'),
+            onPressed: () {
+              /*Navigator.of(context).pop();
+                  _addTodoItem(titleController.text);*/
+            },
+          ),
+          FlatButton(
+            child: const Text('Annuler'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          )
+        ],
       ),
     );
   }

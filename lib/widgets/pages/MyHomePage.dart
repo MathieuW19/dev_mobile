@@ -13,14 +13,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<Todos> todos = [];
 
-  void editTodo(Function editTodo) {
-    editTodo(
-      editnewTodo.id,
-      titleController.text,
-    );
-    Navigator.pop(context);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
