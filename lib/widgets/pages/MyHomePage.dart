@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/Todo.dart';
-import 'package:flutter_application_1/widgets/pages/AllTodoPage.dart';
 import 'package:flutter_application_1/data/todos.dart';
 
 class MyHomePage extends StatefulWidget {
