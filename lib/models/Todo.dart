@@ -4,8 +4,7 @@ import 'package:flutter_application_1/widgets/pages/AllTodoPage.dart';
 class Todo extends StatelessWidget {
   final Function delete;
   final Todos elmt;
-  bool value = false;
-  TextEditingController titleController2 = TextEditingController();
+
   Todo({this.elmt, this.delete});
 
   @override
@@ -36,6 +35,5 @@ class Todo extends StatelessWidget {
 class Todos {
   final String title;
   final String content;
-  bool done;
-  Todos({this.title, this.content, this.done});
+  Todos({this.title, this.content});
 }

@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/models/Todo.dart';
+import 'package:flutter_application_1/widgets/pages/AllTodoPage.dart';
+import 'package:flutter_application_1/data/todos.dart';
 
 class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.todos});
+  final List<Todo> todos;
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var editnewTodo;
   TextEditingController titleController = TextEditingController();
   TextEditingController contentController = TextEditingController();
-
-  List<Todos> todos = [];
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(bottom: 10.0),
         child: FloatingActionButton(
